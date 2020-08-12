@@ -1,21 +1,14 @@
 #!/bin/bash
 
-. bettersh/utils/ui_select_widget.sh
-
-# func_name="someprog"
-
-# someprog() {	
-#     echo "someprog ran successfully "
-# }
-
-# $func_name
+. util/ui_select_widget.sh
+. categories/desktop/imports.sh
 
 echo -e "\n\n\e[4mSELECT THE PROGRAMS YOU WOULD LIKE TO INSTALL\e[24m\n\nuse SPACEBAR to '▣'select or '□'unselect. When you're done,click ENTER or press ESC to cancel.\n"
 
 
 ui_widget_select -l -m -k "${!options2[@]}" -s $PRESELECTED -i "${options2[@]}"
 
-echo "Return code: $?"
+echo -e "\nReturn code: $?"
 echo -e "\nitem(s) selected for install:\n"
 printf '%s\n' "${UI_WIDGET_RC[@]}"
 echo -e "\n"
