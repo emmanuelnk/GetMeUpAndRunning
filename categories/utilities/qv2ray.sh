@@ -27,5 +27,3 @@ qv2ray.ub(){
         mkdir -p $HOME/.config/qv2ray/vcore && unzip $HOME/Downloads/vcore.zip -d $HOME/.config/qv2ray/vcore
     fi
 }
-# mac
-# qv2ray.mc(){}

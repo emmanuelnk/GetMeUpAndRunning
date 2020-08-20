@@ -440,7 +440,7 @@ ui_widget_select() {
 
 run_ui_widget_select_example() {
     case "$1" in
-        1)  echo -e "\n\n\t\t-- * --\t\t\n\n"  
+        1)  echo -e "\n\n\t\t-- EXAMPLE 1 --\t\t\n\n"  
 
             echo -e "\e[4mMENU: multi-select, using indexed keys, preselection, leave selected options\e[24m"
             options=("Option 1" "Option 2" "Option 3" "Option 4" "Option 5" "Option 6" "Option 7" "Option 8" "Option 9" "Option 10" "Option 11" "Option 12")
@@ -451,7 +451,7 @@ run_ui_widget_select_example() {
             echo -e "\n\n\t\t----\t\t\n\n"
             ;;
 
-        2)  echo -e "\n\n\t\t-- * --\t\t\n\n"  
+        2)  echo -e "\n\n\t\t-- EXAMPLE 2 --\t\t\n\n"  
 
             echo -e "\e[4mMENU: multi-select, using assoc keys, preselection, leave selected options\e[24m"
             declare -A options2=( [foo]="Hallo" [bar]="World" [baz]="Record")
@@ -462,7 +462,7 @@ run_ui_widget_select_example() {
             echo -e "\n\n\t\t----\t\t\n\n"
             ;;
             
-        3)  echo -e "\n\n\t\t-- * --\t\t\n\n"  
+        3)  echo -e "\n\n\t\t-- EXAMPLE 3 --\t\t\n\n"  
 
             echo -e "\e[4mMENU: select one, using assoc keys\e[24m"
             ui_widget_select -k yes no -i "ja" "nein"
@@ -472,7 +472,7 @@ run_ui_widget_select_example() {
             echo -e "\n\n\t\t-- * --\t\t\n\n"  
             ;;
 
-        4)  echo -e "\n\n\t\t-- * --\t\t\n\n"  
+        4)  echo -e "\n\n\t\t-- EXAMPLE 4 --\t\t\n\n"  
 
             echo -e "\e[4mMENU: select-one, using assoc keys, preselection, leave selected options\e[24m"
             declare -A options2=( [foo]="Hallo" [bar]="World" [baz]="Record")
@@ -483,7 +483,7 @@ run_ui_widget_select_example() {
             echo -e "\n\n\t\t-- * --\t\t\n\n"  
             ;;
 
-        5)  echo -e "\n\n\t\t-- * --\t\t\n\n"  
+        5)  echo -e "\n\n\t\t-- EXAMPLE 5 --\t\t\n\n"  
 
             echo -e "\e[4mMENU: select one, leave selected item on exit\e[24m"
             options=("Option 1" "Option 2" "Option 3" "Option 4" "Option 5" "Option 6" "Option 7" "Option 8" "Option 9" "Option 10" "Option 11" "Option 12")
@@ -493,7 +493,7 @@ run_ui_widget_select_example() {
 
             echo -e "\n\n\t\t-- * --\t\t\n\n"  
             ;;
-        6)  echo -e "\n\n\t\t-- * --\t\t\n\n"  
+        6)  echo -e "\n\n\t\t-- EXAMPLE 6 --\t\t\n\n"  
 
             echo -e "\e[4mMENU: multi-select, using indexed keys, preselection, clear on exit\e[24m"
             options=("Option 1" "Option 2" "Option 3" "Option 4" "Option 5" "Option 6" "Option 7" "Option 8" "Option 9" "Option 10" "Option 11" "Option 12")
@@ -504,7 +504,7 @@ run_ui_widget_select_example() {
             echo -e "\n\n\t\t-- * --\t\t\n\n"    
             ;;
 
-        7)  echo -e "\n\n\t\t-- * --\t\t\n\n"  
+        7)  echo -e "\n\n\t\t-- 7 --\t\t\n\n"  
 
             echo -e "\e[4mMENU: select-one, using assoc keys, preselection, leave selected options\e[24m"
             declare -A options2=( [foo]="Hallo" [bar]="World" [baz]="Record")

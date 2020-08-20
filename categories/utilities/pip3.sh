@@ -8,6 +8,3 @@ python_utils.ub(){
     sudo pip3 install virtualenv 
 }
 
-# mac
-# python_utils.mc() {}
-
