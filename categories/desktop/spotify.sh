@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# ubuntu
+package_name="spotify-client"
+script_name="spotify"
+
 spotify.ub() {   
     echo -e "\n\ninstalling spotify...\n"
     curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 

@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# ubuntu
+package_name="dvm"
+script_name="dvm"
+
 dvm.ub() {
     echo -e "\n\ninstalling deno version manager...\n..."
     # https://github.com/axetroy/dvm

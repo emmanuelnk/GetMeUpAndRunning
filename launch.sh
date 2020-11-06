@@ -1,12 +1,19 @@
 #!/bin/bash
 
+# unset
+# unset cat_descriptions
+# unset gmu_packagenames
+# unset gmu_descriptions
+# unset gmu_categories
+# unset categories_arr
+
 # imports
 . util/ui_select_widget.sh
 . descriptions.sh
 . util/checks.sh
 
 ## declare an array variable
-declare -a categories_arr=("desktop" "customization" "development" "utilities")
+declare -a categories_arr=("utilities" "desktop" "development")
 
 ## now loop through the above array
 for category in "${categories_arr[@]}"
@@ -40,10 +47,20 @@ do
     # finally the menu
     echo -e "\n\n\e[4mSELECT THE [$category] PROGRAMS YOU WOULD LIKE TO INSTALL\e[24m\n\nuse SPACEBAR to '▣'select or '□'unselect. When you're done, click ENTER or press ESC to cancel.\n"
 
-    ui_widget_select -l -m -k "${!cat_descriptions[@]}" -s $PRESELECTED -i "${cat_descriptions[@]}"
+    ui_widget_select -c -m -k "${!cat_descriptions[@]}" -s $PRESELECTED -i "${cat_descriptions[@]}"
  
-    echo -e "\n"
-    read -p "The above items have been selected for installation. Continue? Type [Y/y] to continue: " -n 1 -r
+    if [[ ${UI_WIDGET_RC[@]} ]]; then
+        read -p "The above items have been selected for installation. Continue? Type [Y/y] to continue: " -n 1 -r
+    else
+        read -p "No items in category [$category] have been selected. Press any key to continue to the next category or ESC to exit the program" -n 1 -r
+        if [[ $REPLY =~ $'\e' ]];then
+            exit 0
+        else
+            unset cat_descriptions
+            continue
+        fi
+    fi
+
     echo    # (optional) move to a new line
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
@@ -59,11 +76,13 @@ do
                 echo -e "\nskipping install of $DESCRIP\n"; continue;
             fi
 
-            #  execute the .ub routine
-            "$key.ub" 
+            #  execute the .ub routine for ubuntu programs
+            "$key.ub"
+            unset cat_descriptions
         done
     else
         echo "You need to type Y or y to continue. Exiting."
+        unset cat_descriptions
         continue
     fi
 

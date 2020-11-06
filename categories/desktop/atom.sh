@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# ubuntu
+package_name="atom"
+script_name="atom"
+
 atom.ub() {   
     echo -e "\n\ninstalling atom editor...\n"
     wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -

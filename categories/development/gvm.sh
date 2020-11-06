@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# ubuntu
+package_name="gvm"
+script_name="gvm"
+
 gvm.ub() {
     echo -e "\n\ninstalling latest go version manager...\n..."
     # get dependencies

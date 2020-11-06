@@ -1,7 +1,8 @@
 #!/bin/bash
 
+package_name="wavebox"
+script_name="wavebox"
 
-# ubuntu
 wavebox.ub() {
     echo -e "\n\ndownloading wavebox...\n"
     wget https://download.wavebox.app/latest/stable/linux/deb -O $HOME/Downloads/wavebox_latest_amd64.deb

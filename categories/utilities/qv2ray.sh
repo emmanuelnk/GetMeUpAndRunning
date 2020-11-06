@@ -1,6 +1,11 @@
 #!/bin/bash
 
-# ubuntu
+unset package_name
+unset script_name
+
+package_name="qv2ray"
+script_name="qv2ray"
+
 qv2ray.ub(){
     echo "fetching latest Qv2ray.AppImage"
 
