@@ -9,3 +9,7 @@ docker.ub() {
     sudo systemctl enable --now docker
     # sudo usermod -aG docker SOMEUSERNAME
 }
+
+docker.is_installed() {
+    check_is_apt_installed $1 $2
+}

@@ -9,3 +9,7 @@ awscli.ub() {
     mkdir -p $HOME/Downloads/awscliv2 && unzip $HOME/Downloads/awscliv2.zip -d $HOME/Downloads/awscliv2
     sudo $HOME/Downloads/awscliv2/aws/install
 }
+
+awscli.is_installed() {
+    check_is_apt_installed $1 $2
+}

@@ -32,3 +32,11 @@ qv2ray.ub(){
         mkdir -p $HOME/.config/qv2ray/vcore && unzip $HOME/Downloads/vcore.zip -d $HOME/.config/qv2ray/vcore
     fi
 }
+
+qv2ray.is_installed() {
+    # you can use wild cards here 
+    FILE_1="$HOME/.config/qv2ray/vcore/v2ray"
+    FILE_2="$HOME/src/qv2ray/Qv2ray*.AppImage"
+
+    check_installed_by_files_exist $1 $2 $FILE_1 $FILE_2
+}

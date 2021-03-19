@@ -13,3 +13,7 @@ dvm.ub() {
     dvm install $(dvm ls-remote | tail -1)
     dvm use $(dvm ls-remote | tail -1)
 }
+
+dvm.is_installed() {
+    check_is_apt_installed $1 $2
+}

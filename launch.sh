@@ -18,7 +18,9 @@ do
     for key in "${!gmu_packagenames[@]}"; do 
         if [[ ${gmu_categories[$key]} == $category ]];then
 
-            check_is_installed ${gmu_packagenames[$key]} $key
+            . "categories/$category/$key.sh"
+
+            "$key.is_installed" ${gmu_packagenames[$key]} $key
 
             if [[ ${gmu_descriptions[$key]} != *"[INSTALLED]"* ]]; then
                 PRESELECTED="${PRESELECTED} $key"

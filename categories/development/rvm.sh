@@ -10,3 +10,7 @@ rvm.ub() {
     sudo apt-get update && sudo apt-get install rvm -y
     echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
 }
+
+rvm.is_installed() {
+    check_is_apt_installed $1 $2
+}

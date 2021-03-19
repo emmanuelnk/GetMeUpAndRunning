@@ -9,3 +9,7 @@ vscode.ub() {
     sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" --yes
     sudo apt-get update && sudo apt-get install code --yes
 }
+
+vscode.is_installed() {
+    check_is_apt_installed $1 $2
+}

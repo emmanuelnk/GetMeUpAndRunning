@@ -12,3 +12,7 @@ gvm.ub() {
     . $HOME/.gvm/scripts/gvm
 
 }
+
+gvm.is_installed() {
+    check_is_apt_installed $1 $2
+}

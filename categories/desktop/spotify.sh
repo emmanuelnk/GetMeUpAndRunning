@@ -9,3 +9,7 @@ spotify.ub() {
     echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list 
     sudo apt-get update && sudo apt-get install spotify-client --yes
 }
+
+spotify.is_installed() {
+    check_is_apt_installed $1 $2
+}

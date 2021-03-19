@@ -10,3 +10,7 @@ pip3.ub(){
     sudo pip3 install virtualenv 
 }
 
+pip3.is_installed() {
+    check_is_apt_installed $1 $2
+}
+

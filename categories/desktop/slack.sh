@@ -13,3 +13,7 @@ slack.ub() {
     echo -e "\ninstalling slack...\n"
     sudo apt-get install $HOME/Downloads/slack-desktop-latest.deb --yes
 }
+
+slack.is_installed() {
+    check_is_apt_installed $1 $2
+}

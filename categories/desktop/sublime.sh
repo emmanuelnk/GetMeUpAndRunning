@@ -9,3 +9,7 @@ sublime.ub() {
     sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
     sudo apt-get install sublime-text --yes
 }
+
+sublime.is_installed() {
+    check_is_apt_installed $1 $2
+}

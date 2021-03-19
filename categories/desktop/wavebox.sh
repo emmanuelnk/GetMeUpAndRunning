@@ -9,3 +9,7 @@ wavebox.ub() {
     echo -e "\ninstalling wavebox...\n"
     sudo apt-get install $HOME/Downloads/wavebox_latest_amd64.deb --yes
 }
+
+wavebox.is_installed() {
+    check_is_apt_installed $1 $2
+}

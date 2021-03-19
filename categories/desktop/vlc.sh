@@ -8,3 +8,7 @@ vlc.ub() {
     sudo apt-get update
     sudo apt-get install vlc --yes
 }
+
+vlc.is_installed() {
+    check_is_apt_installed $1 $2
+}
