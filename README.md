@@ -9,6 +9,9 @@
 GMUAR is a pure bash command-line utility program to install a host of common software on Ubuntu/Debian. 
 This helps get software onto fresh Ubuntu installs fast.
 
+## Why?
+I got tired of having to manually `sudo apt install` a bunch of software everytime I launched a fresh Ubuntu installation. I wanted the ability to pick and choose what kind of software I would like installed through a terminal menu. That's all
+
 ## Quick start
 
 Give `./launch.sh` permissions to launch
