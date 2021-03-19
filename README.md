@@ -101,11 +101,11 @@ docker build -t gmuar/gmuar .
 sudo docker run -it gmuar/gmuar:latest /bin/bash
 ```
 
-## Test it in Katacoda
+## See it in action online right now in Katacoda
 - Open up [katacoda](https://www.katacoda.com/courses/ubuntu/playground)
+- Run the following commands
 ```bash
-git clone https://github.com/emmanuelnk/GetMeUpAndRunning
-cd GetMeUpAndRunning
+git clone https://github.com/emmanuelnk/GetMeUpAndRunning && cd GetMeUpAndRunning
 ./gmuar.sh
 ```
 
