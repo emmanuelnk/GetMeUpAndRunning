@@ -57,7 +57,7 @@ I got tired of having to manually `sudo apt install` a bunch of software everyti
         ├── nettools.sh
         └── qv2ray.sh
     ```
-<details>
+</details>
 
 ## Quick start
 
