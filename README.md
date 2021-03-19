@@ -1,7 +1,7 @@
-# GetMeUpAndRunning (GMUAR)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-[![Twitter](https://img.shields.io/twitter/follow/emmanuel_n_k?style=social)](https://twitter.com/emmanuel_n_k)
+[![Twitter](https://img.shields.io/twitter/follow/emmanuel_n_k?style=social)](https://twitter.com/emmanuel_n_k) 
+# GetMeUpAndRunning (GMUAR)
 **A pure Bash command-line menu tool for installing Ubuntu/Debian software fast -- prononounced _mew-er_ because the g moves in silence like lasagna**
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/19330930/111744577-68516900-88c6-11eb-9c75-641acff9bef3.gif)
 ## Introduction
