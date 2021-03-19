@@ -3,7 +3,7 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![Twitter](https://img.shields.io/twitter/follow/emmanuel_n_k?style=social)](https://twitter.com/emmanuel_n_k) 
 
-**A pure Bash command-line menu tool for installing Ubuntu/Debian software fast ** 
+**A pure Bash command-line menu tool for installing Ubuntu/Debian software fast** 
 
 Prononounced _mew-er_ because the g moves in silence like lasagna
 
