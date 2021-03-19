@@ -12,6 +12,53 @@ This helps get software onto fresh Ubuntu installs fast.
 ## Why?
 I got tired of having to manually `sudo apt install` a bunch of software everytime I launched a fresh Ubuntu installation. I wanted the ability to pick and choose what kind of software I would like installed through a terminal menu. That's all
 
+## Software in this version
+<details>
+  <summary><b>Click to expand</b></summary>
+    
+    ```bash
+    ├── customization
+    │   └── zsh.sh
+    ├── desktop
+    │   ├── atom.sh
+    │   ├── chrome.sh
+    │   ├── qbittorrent.sh
+    │   ├── slack.sh
+    │   ├── spotify.sh
+    │   ├── sublime.sh
+    │   ├── vlc.sh
+    │   └── wavebox.sh
+    ├── development
+    │   ├── anaconda.sh
+    │   ├── awscli.sh
+    │   ├── dvm.sh
+    │   ├── genymotion.sh
+    │   ├── go.sh
+    │   ├── gvm.sh
+    │   ├── heroku.sh
+    │   ├── node_n.sh
+    │   ├── pgadmin4.sh
+    │   ├── postman.sh
+    │   ├── rvm.sh
+    │   ├── vscode.sh
+    │   ├── workbench.sh
+    │   └── yarn.sh
+    ├── setup
+    │   ├── cmake.sh
+    │   ├── curl.sh
+    │   ├── git.sh
+    │   ├── make.sh
+    │   └── pip3.sh
+    └── utilities
+        ├── docker.sh
+        ├── fuck.sh
+        ├── htop.sh
+        ├── mlocate.sh
+        ├── nettools.sh
+        └── qv2ray.sh
+    ```
+<details>
+
 ## Quick start
 
 Give `./launch.sh` permissions to launch
