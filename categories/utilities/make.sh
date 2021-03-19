@@ -5,5 +5,5 @@ script_name="make"
 
 make.ub() {   
     echo -e "\n\ninstalling make...\n"
-    sudo apt update && sudo apt install make --yes
+    sudo apt-get update && sudo apt-get install make --yes
 }

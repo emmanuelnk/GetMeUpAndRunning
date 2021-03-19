@@ -5,5 +5,5 @@ script_name="cmake"
 
 cmake.ub() {   
     echo -e "\n\ninstalling cmake...\n"
-    sudo apt update && sudo apt install cmake --yes
+    sudo apt-get update && sudo apt-get install cmake --yes
 }

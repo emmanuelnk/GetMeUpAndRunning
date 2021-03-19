@@ -1,21 +1,11 @@
 #!/bin/bash
 
-# unset
-# unset cat_descriptions
-# unset gmu_packagenames
-# unset gmu_descriptions
-# unset gmu_categories
-# unset categories_arr
-
 # imports
 . util/ui_select_widget.sh
-. descriptions.sh
 . util/checks.sh
+. descriptions.sh
 
-## declare an array variable
-declare -a categories_arr=("utilities" "desktop" "development")
-
-## now loop through the above array
+# now loop through the above array
 for category in "${categories_arr[@]}"
 do
    # --------- START-----------------
