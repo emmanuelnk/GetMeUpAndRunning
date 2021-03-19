@@ -7,7 +7,7 @@ docker.ub() {
     echo -e "\n\ninstalling docker.io...\n"
     sudo apt-get update && sudo apt-get install docker.io --yes 
     sudo systemctl enable --now docker
-    # sudo usermod -aG docker SOMEUSERNAME
+    sudo usermod -aG docker $USER
 }
 
 docker.is_installed() {
