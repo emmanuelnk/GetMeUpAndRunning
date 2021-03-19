@@ -90,9 +90,12 @@ If a program is already installed, it will have the tag `[INSTALLED]` beside its
 
 
 ## How to add apt/snap programs
-Simply create a new file under the relevant category. 
+- Simply create a new `.sh` file under the relevant category. 
+- You can also create new categories, just remeber to add them in the `categories_arr` in the `descriptions.sh` file
+- The order of insatallation of categories is determined by the order of categories in `categories_arr`.
 
-For example if I want to add `gimp` to GMUAR. I consider it a category `desktop` software:
+### Example - Adding new software
+If I want to add `gimp` to GMUAR. I consider it a category `desktop` software:
 ```bash
 touch categories/desktop/gimp.sh    
 ```
@@ -129,7 +132,33 @@ curl.is_installed() {
 - `package_name` is usually the name the package has in `apt`
 - `script_name` is the name of the `.sh` file you just created
 
-## How to manually installed/built Programs
+
+### Example - Adding a new category
+If I want to create a new category called `business`, create a folder called business under categories folder:
+- `mkdir -p categories/business`
+- Then add `business` to the `categories_arr` in the `descriptions.sh` file
+```bash
+#!/bin/bash
+
+# arrays
+declare -A gmu_packagenames # apt package names of programs
+declare -A gmu_descriptions # descriptions of programs
+declare -A gmu_categories   # category of routine
+declare -a categories_arr=("setup" "utilities" "desktop" "development" "customization" "business")
+
+for directory in "${!categories_arr[@]}"; do 
+    for file in "categories/${categories_arr[$directory]}"/*; do
+        . "$file"
+
+        gmu_packagenames[$script_name]=$package_name  
+        gmu_descriptions[$script_name]=$script_name 
+        gmu_categories[$script_name]="${categories_arr[$directory]}"
+    done
+done
+```
+- Then you can continue to add your software files in this new category
+
+## How to test manually installed/built Programs
 - If you do not install a program using `apt` you can use `check_installed_by_files_exist` to check for certain files or binaries:
     ```bash
     postman.is_installed() {
