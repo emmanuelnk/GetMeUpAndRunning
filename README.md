@@ -137,7 +137,7 @@ curl.is_installed() {
         check_installed_by_files_exist $1 $2 "$HOME/src/Postman/Postman"
     }
     ```
-- This function can take multiple args as well wildcards:
+- The `check_installed_by_files_exist` function can take multiple args as well as wildcards:
     ```bash
     your_program.is_installed() {
         $FILE_1="$HOME/src/your_program/your_program_executable_1"
@@ -149,14 +149,14 @@ curl.is_installed() {
     ```
 
 ## Test GMUAR locally in Ubuntu Docker
-- To get a feel of how this Script works, you can clone this repository and run:
+- To get a feel of how this script works, you can clone this repository and run:
 ```bash
 docker build -t gmuar/gmuar .
 sudo docker run -it gmuar/gmuar:latest /bin/bash
 ```
 
 ## See it in action online right now in Katacoda
-- Open up [katacoda](https://www.katacoda.com/courses/ubuntu/playground)
+- Open up [Katacoda](https://www.katacoda.com/courses/ubuntu/playground) to access a free Ubuntu playground
 - Run the following commands
 ```bash
 git clone https://github.com/emmanuelnk/GetMeUpAndRunning && cd GetMeUpAndRunning
@@ -165,7 +165,9 @@ git clone https://github.com/emmanuelnk/GetMeUpAndRunning && cd GetMeUpAndRunnin
 
 ## Contributions
 - If you would like to make a contribution, just fork the repo and make a pull request
-- All kinds of contributions, optimizations etc are welcomed
+- All kinds of contributions , optimizations and suggestions etc are welcomed
 
-
+## Disclaimer
+- These scripts have only been tested on Ubuntu 20.04
+- It is your responsibility to check the install scripts and ensure whats to be installed is compatible with your system.
 
