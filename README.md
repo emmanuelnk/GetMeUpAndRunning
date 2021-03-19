@@ -91,7 +91,7 @@ If a program is already installed, it will have the tag `[INSTALLED]` beside its
 
 ## How to add apt/snap programs
 - Simply create a new `.sh` file under the relevant category. 
-- You can also create new categories, just remeber to add them in the `categories_arr` in the `descriptions.sh` file
+- You can also create new categories, just remember to add them in the `categories_arr` in the `descriptions.sh` file
 - The order of insatallation of categories is determined by the order of categories in `categories_arr`.
 
 ### Example - Adding new software
@@ -134,7 +134,7 @@ curl.is_installed() {
 
 
 ### Example - Adding a new category
-If I want to create a new category called `business`, create a folder called business under categories folder:
+If you want to create a new category called `business`, create a folder called business under categories folder:
 - `mkdir -p categories/business`
 - Then add `business` to the `categories_arr` in the `descriptions.sh` file
 ```bash
@@ -191,10 +191,12 @@ sudo docker run -it gmuar/gmuar:latest /bin/bash
 git clone https://github.com/emmanuelnk/GetMeUpAndRunning && cd GetMeUpAndRunning
 ./gmuar.sh
 ```
+## Software Requests
+- If you would like me to add a certain software, just open up an issue
 
 ## Contributions
 - If you would like to make a contribution, just fork the repo and make a pull request
-- All kinds of contributions , optimizations and suggestions etc are welcomed
+- All kinds of contributions, optimizations and suggestions etc are welcomed
 
 ## Disclaimer
 - These scripts have only been tested on Ubuntu 20.04
