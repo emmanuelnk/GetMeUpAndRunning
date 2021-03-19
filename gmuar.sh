@@ -1,21 +1,11 @@
 #!/bin/bash
 
-# unset
-# unset cat_descriptions
-# unset gmu_packagenames
-# unset gmu_descriptions
-# unset gmu_categories
-# unset categories_arr
-
 # imports
 . util/ui_select_widget.sh
-. descriptions.sh
 . util/checks.sh
+. descriptions.sh
 
-## declare an array variable
-declare -a categories_arr=("utilities" "desktop" "development")
-
-## now loop through the above array
+# now loop through the above array
 for category in "${categories_arr[@]}"
 do
    # --------- START-----------------
@@ -28,7 +18,9 @@ do
     for key in "${!gmu_packagenames[@]}"; do 
         if [[ ${gmu_categories[$key]} == $category ]];then
 
-            check_is_installed ${gmu_packagenames[$key]} $key
+            . "categories/$category/$key.sh"
+
+            "$key.is_installed" ${gmu_packagenames[$key]} $key
 
             if [[ ${gmu_descriptions[$key]} != *"[INSTALLED]"* ]]; then
                 PRESELECTED="${PRESELECTED} $key"

@@ -11,5 +11,9 @@ slack.ub() {
     | grep 'slack-desktop' \
     | xargs wget -q -O slack-desktop-latest.deb
     echo -e "\ninstalling slack...\n"
-    sudo apt install ./slack-desktop-latest.deb --yes
+    sudo apt-get install $HOME/Downloads/slack-desktop-latest.deb --yes
+}
+
+slack.is_installed() {
+    check_is_apt_installed $1 $2
 }

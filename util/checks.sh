@@ -1,6 +1,6 @@
 #!/bin/bash
 
-check_is_installed() { 
+check_is_apt_installed() { 
     PACKAGE_NAME=$1
     DESCRIPTIONS_KEY=$2
 
@@ -13,6 +13,30 @@ check_is_installed() {
             [[ -v gmu_descriptions[$DESCRIPTIONS_KEY] ]] && gmu_descriptions[$DESCRIPTIONS_KEY]+="[INSTALLED]"
         fi
     fi
+}
+
+check_installed_by_files_exist() { 
+    PACKAGE_NAME=$1
+    DESCRIPTIONS_KEY=$2
+
+    # checks files exists
+    if does_file_exist "${@:3}"; then
+        [[ -v gmu_descriptions[$DESCRIPTIONS_KEY] ]] && gmu_descriptions[$DESCRIPTIONS_KEY]+="[INSTALLED]"
+    fi
+}
+
+
+does_file_exist() {
+    for var in "$@"
+    do
+        if compgen -G $var > /dev/null; then
+            continue
+        else
+            return 1
+        fi
+    done
+
+    return 0
 }
 
 continue_install() {

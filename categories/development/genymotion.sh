@@ -10,3 +10,7 @@ genymotion.ub() {
     chmod +x $HOME/Downloads/genymotion-$geny_ver-linux_x64.bin
     sudo $HOME/Downloads/genymotion-$geny_ver-linux_x64.bin
 }
+
+genymotion.is_installed() {
+    check_is_apt_installed $1 $2
+}

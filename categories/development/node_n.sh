@@ -8,3 +8,7 @@ node_n.ub() {
     curl -L https://git.io/n-install | bash
     . $HOME/.zshrc
 }
+
+node_n.is_installed() {
+    check_is_apt_installed $1 $2
+}
