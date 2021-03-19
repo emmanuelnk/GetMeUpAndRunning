@@ -60,10 +60,14 @@ I got tired of having to manually `sudo apt install` a bunch of software everyti
 </details>
 
 ## Quick start
-
-Give `./launch.sh` permissions to launch
+Clone this repository
 ```bash
-chmod +x ./gmaur.sh
+git clone https://github.com/emmanuelnk/GetMeUpAndRunning.git && cd GetMeUpAndRunning
+```
+
+Give `./gmuar.sh` permissions to launch
+```bash
+chmod +x ./gmuar.sh
 ```
 
 Run it!
@@ -74,7 +78,7 @@ Run it!
 ![Screenshot](https://user-images.githubusercontent.com/19330930/111746696-57562700-88c9-11eb-9fcb-1238d1749c3a.png)
 
 ## How to use
-It's pretty straight-forward. When you run `./gmaur.sh` a menu prompt will open showing you what programs are already installed and what you can install.
+It's pretty straight-forward. When you run `./gmuar.sh` a menu prompt will open showing you what programs are already installed and what you can install.
 Simply follow the instructions.
 
 - ▣ selected -- will be installed
