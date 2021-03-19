@@ -2,11 +2,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![Twitter](https://img.shields.io/twitter/follow/emmanuel_n_k?style=social)](https://twitter.com/emmanuel_n_k)
-## A pure Bash software quick install tool for Ubuntu/Debian
+## A pure Bash pure bash command-line menu tool for installing Ubuntu/Debian software
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/19330930/111744577-68516900-88c6-11eb-9c75-641acff9bef3.gif)
 ## Introduction
 
-GMUAR is a pure bash command-line utility program to install a host of common software on Ubuntu/Debian. 
+GMUAR is a pure Bash command-line menu tool program to install a host of common software on Ubuntu/Debian. 
 This helps get software onto fresh Ubuntu installs fast.
 
 ## Why?
