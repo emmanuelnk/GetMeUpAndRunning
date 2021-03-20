@@ -114,7 +114,8 @@ package_name="gimp"
 # name of this file i.e. gimp.sh without the extension
 script_name="gimp"
 
-curl.ub() {  
+# installation function should be script_name.ub()
+gimp.ub() {  
     # print what you are installing
     echo -e "\n\ninstalling Gimp...\n"
 
@@ -124,7 +125,9 @@ curl.ub() {
     sudo apt-get install gimp -y
 }
 
-curl.is_installed() {
+
+# installation check function should be script_name.is_installed()
+gimp.is_installed() {
     # add how you would check if Gimp is install
     # if you installed it with apt or the executable is added to PATH (e.g. snap packages)
     # then this is enough
