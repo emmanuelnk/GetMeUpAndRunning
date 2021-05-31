@@ -91,6 +91,8 @@ Simply follow the instructions.
 If a program is already installed, it will have the tag `[INSTALLED]` beside its name e.g.
 ![Screenshot](https://user-images.githubusercontent.com/19330930/111747020-c2076280-88c9-11eb-985c-01a409c8d6e8.png)
 
+You can run `./gmuar -p` to pre-select all the software that you don't have installed. By default, GMUAR will not pre-select uninstalled software in the menu.
+
 
 
 ## How to add apt/snap programs
