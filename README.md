@@ -8,6 +8,22 @@
 Prononounced _mew-er_ because the g moves in silence like lasagna
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/19330930/111744577-68516900-88c6-11eb-9c75-641acff9bef3.gif)
+- Contents
+  * [Introduction](#introduction)
+  * [Why?](#why)
+  * [Software in this version](#software-in-this-version)
+  * [Quick start](#quick-start)
+  * [How to use](#how-to-use)
+  * [How to add apt/snap programs](#how-to-add-aptsnap-programs)
+    + [Example - Adding new software](#example---adding-new-software)
+    + [Example - Adding a new category](#example---adding-a-new-category)
+  * [How to test manually installed/built Programs](#how-to-test-manually-installedbuilt-programs)
+  * [Test GMUAR locally in Ubuntu Docker](#test-gmuar-locally-in-ubuntu-docker)
+  * [DEMO: See it in action online right now on Replit](#demo-see-it-in-action-online-right-now-on-replit)
+  * [Software Requests](#software-requests)
+  * [Contributions](#contributions)
+  * [Disclaimer](#disclaimer)
+
 ## Introduction
 
 GMUAR is a pure Bash command-line menu tool program to install a host of common software on Ubuntu/Debian. 
@@ -193,11 +209,12 @@ docker build -t gmuar/gmuar .
 sudo docker run -it gmuar/gmuar:latest /bin/bash
 ```
 
-## See it in action online right now in Katacoda
-- Open up [Katacoda](https://www.katacoda.com/courses/ubuntu/playground) to access a free Ubuntu playground
+## DEMO: See it in action online right now on Replit
+- Go to the [Demo](https://replit.com/@EmmanuelKyeyune/GetMeUpAndRunningDemo#README.md)
+- ![image](https://user-images.githubusercontent.com/19330930/212711631-3d2c2e5c-9415-49ff-b91d-1d0e781b040a.png)
 - Run the following commands
 ```bash
-git clone https://github.com/emmanuelnk/GetMeUpAndRunning && cd GetMeUpAndRunning
+cd ~/GetMeUpAndRunningDemo/GetMeUpAndRunning
 ./gmuar.sh
 ```
 ## Software Requests
